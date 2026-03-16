@@ -1,0 +1,23 @@
+-- Java syntax definition
+lex.define_syntax({
+    name       = "Java",
+    extensions = { ".java" },
+    comment    = "//",
+    multiline_comment = { "/*", "*/" },
+    keywords1  = {
+        "continue", "for", "new", "switch", "assert", "default", "do",
+        "if", "break", "throw", "else", "case", "return", "catch",
+        "try", "finally", "while",
+    },
+    keywords2  = {
+        "abstract", "goto", "package", "synchronized", "private", "this",
+        "implements", "protected", "import", "public", "throws", "enum",
+        "instanceof", "transient", "extends", "final", "interface",
+        "static", "class", "strictfp", "volatile", "const", "native",
+        "super", "true", "false", "null",
+    },
+    keywords3  = {
+        "boolean", "double", "byte", "int", "short", "char",
+        "void", "long", "float", "var",
+    },
+})

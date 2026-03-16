@@ -1,0 +1,27 @@
+-- Go syntax definition
+lex.define_syntax({
+    name       = "Go",
+    extensions = { ".go" },
+    comment    = "//",
+    multiline_comment = { "/*", "*/" },
+    keywords1  = {
+        "break", "case", "continue", "default", "defer", "else",
+        "fallthrough", "for", "go", "goto", "if", "range",
+        "return", "select", "switch",
+    },
+    keywords2  = {
+        "chan", "const", "func", "import", "interface", "map",
+        "package", "struct", "type", "var",
+        "true", "false", "nil", "iota",
+    },
+    keywords3  = {
+        "bool", "byte", "complex64", "complex128",
+        "error", "float32", "float64",
+        "int", "int8", "int16", "int32", "int64",
+        "rune", "string",
+        "uint", "uint8", "uint16", "uint32", "uint64", "uintptr",
+        "append", "cap", "close", "copy", "delete", "imag",
+        "len", "make", "new", "panic", "print", "println",
+        "real", "recover",
+    },
+})

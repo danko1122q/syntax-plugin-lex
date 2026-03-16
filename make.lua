@@ -1,0 +1,20 @@
+-- Makefile syntax definition
+lex.define_syntax({
+    name       = "Makefile",
+    extensions = { "Makefile", "makefile", "GNUmakefile", ".mak", ".mk" },
+    comment    = "#",
+    keywords1  = {
+        "define", "endef", "undefine", "ifdef", "ifndef", "ifeq",
+        "ifneq", "else", "endif", "include", "sinclude", "override",
+        "export", "unexport", "private", "vpath", "-include",
+    },
+    keywords2  = {
+        "subst", "patsubst", "findstring", "filter", "filter-out",
+        "sort", "word", "words", "wordlist", "firstword", "lastword",
+        "dir", "notdir", "suffix", "basename", "addsuffix", "addprefix",
+        "join", "wildcard", "realpath", "abspath", "error", "warning",
+        "shell", "origin", "flavor", "foreach", "if", "or", "and",
+        "call", "eval", "file", "value",
+    },
+    flags = 2, -- HL_HIGHLIGHT_STRINGS only
+})

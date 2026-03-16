@@ -1,0 +1,38 @@
+-- Haskell syntax definition
+lex.define_syntax({
+    name       = "Haskell",
+    extensions = { ".hs", ".lhs" },
+    comment    = "--",
+    multiline_comment = { "{-", "-}" },
+    keywords1  = {
+        "case", "do", "else", "if", "in", "let",
+        "of", "then", "where", "forall",
+    },
+    keywords2  = {
+        "class", "data", "default", "deriving", "import",
+        "infixl", "infixr", "infix", "instance", "module",
+        "newtype", "qualified", "type", "family",
+        "as", "hiding",
+        "mdo", "proc", "rec",
+    },
+    keywords3  = {
+        "Bool", "Char", "Double", "Float",
+        "Int", "Integer", "Ordering", "String", "Word",
+        "IO", "Maybe", "Either", "Either", "Void",
+        "True", "False", "Nothing", "Just", "Left", "Right",
+        "EQ", "LT", "GT",
+        "Functor", "Applicative", "Monad", "Foldable", "Traversable",
+        "Eq", "Ord", "Show", "Read", "Num", "Integral",
+        "Fractional", "Floating", "Real", "RealFloat",
+        "Enum", "Bounded", "Semigroup", "Monoid",
+        "fmap", "pure", "return", "bind",
+        "map", "filter", "foldr", "foldl", "foldl'",
+        "head", "tail", "init", "last", "length",
+        "take", "drop", "splitAt", "span", "break",
+        "zip", "unzip", "zipWith",
+        "concat", "concatMap", "null", "elem", "notElem",
+        "lookup", "flip", "const", "id",
+        "show", "read", "print", "putStr", "putStrLn", "getLine",
+        "error", "undefined", "seq",
+    },
+})

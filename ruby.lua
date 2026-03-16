@@ -1,0 +1,37 @@
+-- Ruby syntax definition
+lex.define_syntax({
+    name       = "Ruby",
+    extensions = { ".rb", ".rake", ".gemspec" },
+    comment    = "#",
+    multiline_comment = { "=begin", "=end" },
+    keywords1  = {
+        "if", "elsif", "else", "unless", "case", "when", "then",
+        "while", "until", "for", "do", "loop",
+        "break", "next", "redo", "retry", "return",
+        "begin", "rescue", "ensure", "raise",
+        "yield", "and", "or", "not",
+        "in",
+    },
+    keywords2  = {
+        "class", "module", "def", "end", "alias", "undef",
+        "extend", "include", "prepend", "require", "require_relative",
+        "attr_reader", "attr_writer", "attr_accessor",
+        "protected", "private", "public",
+        "self", "super",
+        "true", "false", "nil",
+        "__method__", "__dir__", "__FILE__", "__LINE__",
+        "defined?",
+    },
+    keywords3  = {
+        "puts", "print", "p", "pp", "gets", "chomp",
+        "Integer", "Float", "String", "Array", "Hash",
+        "Symbol", "Range", "Regexp", "IO", "File", "Dir",
+        "Proc", "Method", "Thread", "Fiber",
+        "Comparable", "Enumerable", "Kernel", "Object",
+        "StandardError", "RuntimeError", "ArgumentError",
+        "TypeError", "NameError", "NoMethodError",
+        "IndexError", "KeyError", "StopIteration",
+        "IOError", "Errno", "NotImplementedError",
+        "frozen_string_literal",
+    },
+})
