@@ -1,6 +1,6 @@
 # syntax-plugin-lex
 
-A collection of Lua syntax highlighting definitions for [Lex Editor](https://github.com/danko1122q/lex).
+A collection of Lua syntax highlighting definitions for [Lex Editor](https://github.com/danko1122q/lex-editor).
 
 ## Installation
 
