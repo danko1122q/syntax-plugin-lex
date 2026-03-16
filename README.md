@@ -54,5 +54,5 @@ Atau jalankan `uninstall.sh` dari repo lex — akan ada opsi untuk menghapus plu
 
 ## Related
 
-- [Lex Editor](https://github.com/danko1122q/lex)
+- [Lex Editor](https://github.com/danko1122q/lex-editor)
 - [Word Count Plugin](https://github.com/danko1122q/word-count-plugins)
