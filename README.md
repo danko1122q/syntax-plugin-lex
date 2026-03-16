@@ -4,15 +4,18 @@ A collection of Lua syntax highlighting definitions for [Lex Editor](https://git
 
 ## Installation
 
-### Otomatis (via install.sh)
-Jika menggunakan `install.sh` dari repo lex, plugin ini otomatis di-clone saat instalasi.
+### Automatic (via install.sh)
+If you use `install.sh` from the lex repo, this plugin is automatically cloned to the correct
+location — including when running with `sudo`.
+```sh
+sudo ./scripts/install.sh
+# → cloned to /home/<user>/.config/lex/plugins/syntax/
+```
 
 ### Manual
 ```sh
 git clone https://github.com/danko1122q/syntax-plugin-lex ~/.config/lex/plugins/syntax
 ```
-
-Nama folder tujuan `syntax` ditentukan langsung di akhir perintah clone.
 
 ## Update
 ```sh
@@ -31,7 +34,7 @@ git -C ~/.config/lex/plugins/syntax pull
 
 ## Adding a Custom Syntax
 
-Buat file `.lua` baru di dalam folder `~/.config/lex/plugins/syntax/`:
+Create a new `.lua` file inside `~/.config/lex/plugins/syntax/`:
 ```lua
 -- ~/.config/lex/plugins/syntax/mylang.lua
 lex.define_syntax({
@@ -43,14 +46,14 @@ lex.define_syntax({
 })
 ```
 
-File akan otomatis di-load saat editor dibuka.
+The file will be loaded automatically when the editor starts.
 
 ## Uninstall
 ```sh
 rm -rf ~/.config/lex/plugins/syntax/
 ```
 
-Atau jalankan `uninstall.sh` dari repo lex — akan ada opsi untuk menghapus plugin ini.
+Or run `uninstall.sh` from the lex repo — it will prompt you to remove this plugin as well.
 
 ## Related
 
